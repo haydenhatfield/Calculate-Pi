@@ -24,5 +24,5 @@ Note: remember that the printed value of pi will be an estimate!
 import math
 n = int(input("I will estimate e. How many terms should I use? "))
 decimals = int(input("How many decimal places should I use in the result? "))
-e = 1.0/sum([((-1.0)**k)/math.factorial(k) for k in range(0,n)])
+e = sum([((-1.0)**k)/math.factorial(k) for k in range(0,n)])
 print("The approximate value of e is {0}".format(round(e, decimals)))
